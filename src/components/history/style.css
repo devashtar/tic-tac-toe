@@ -1,0 +1,58 @@
+.hist__list {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+}
+
+.item__hist {
+    margin: 5px 0;
+    text-align: center;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 600;
+
+    border-radius: 5px;
+    border: 1px solid #555;
+    color: #e7e7e7;
+    background-color: #444;
+    cursor: pointer;
+}
+
+.item__hist:first-child {
+    width: 300px;
+}
+
+.item__hist:hover {
+    color: #fff;
+    background-color: #777;
+}
+
+.item__hist.show:hover > .card__history {
+    display: grid;
+}
+
+.card__history {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    position: absolute;
+    top: 35px;
+    left: 110px;
+    width: 180px;
+    height: 180px;
+
+    border-radius: 5px;
+    border: 2px solid #333;
+}
+
+.inner__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+
+    color: #444;
+    border: 1px solid #333;
+}

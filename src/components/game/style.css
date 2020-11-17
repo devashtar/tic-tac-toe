@@ -1,0 +1,9 @@
+.container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-align: center;
+    display: block;
+    width: 300px;
+
+}
